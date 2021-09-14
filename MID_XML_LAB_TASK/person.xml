@@ -1,0 +1,20 @@
+<person>
+          <person id="1">
+                   <name>John Doe </name>
+                   <address> H38,R#3,Banani,Dhaka  </address>
+                   <department>Sales </department>
+                   <salary>$20000 </salary>
+              </person>
+           <person id="2">
+                <name>Mark </name>
+                   <address> Gulistan,Dhaka  </address>
+                   <department>Shop Keeper </department>
+                   <salary>$200 </salary>
+            </person>
+            <person id="3">
+                    <name>Ala voski </name>
+                   <address> Gulshan,Dhaka  </address>
+                   <department>President </department>
+                   <salary>$2000 </salary>
+            </person>
+</person>
