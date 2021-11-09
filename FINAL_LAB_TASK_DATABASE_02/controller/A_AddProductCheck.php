@@ -3,9 +3,9 @@
 
 	if(isset($_POST['save'])){
 
-		$name 	= $_POST['name'];
-		$buyingPrice 		= $_POST['buyingPrice'];
-		$sellingPrice 	= $_POST['sellingPrice'];
+		$name	= $_POST['name'];
+		$buyingPrice = $_POST['buyingPrice'];
+		$sellingPrice	= $_POST['sellingPrice'];
 
 		if($name != ""){
 			if($buyingPrice != ""){

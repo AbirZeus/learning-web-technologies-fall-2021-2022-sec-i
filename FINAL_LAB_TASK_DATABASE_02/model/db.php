@@ -1,10 +1,10 @@
 
-<?php 
+<?php
 
 	$host = "localhost";
 	$dbuser = "root";
 	$dbpass = "";
-	$dbname = "webtech";
+	$dbname = "product_db";
 
 	function getConnection(){
 		global $host;
@@ -15,6 +15,6 @@
 		$con = mysqli_connect($host, $dbuser, $dbpass, $dbname);
 		return $con;
 	}
-	
+
 
 ?>

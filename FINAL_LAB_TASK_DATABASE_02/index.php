@@ -1,4 +1,4 @@
 <?php
 
-	header('location: views/AddProduct.php');
+	header('location: views/A_AddProduct.php');
 ?>

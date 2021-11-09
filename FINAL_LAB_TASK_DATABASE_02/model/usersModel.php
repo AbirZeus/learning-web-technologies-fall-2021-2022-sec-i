@@ -17,7 +17,7 @@
 
 	function addUser($user){
 		$con = getConnection();
-		$sql = "insert into product_db values('1', '{$user['name']}', '{$user['buyingPrice']}', '{$user['sellingPrice']}')";
+		$sql = "insert into products values('2', '{$user['name']}', '{$user['buyingPrice']}', '{$user['sellingPrice']}')";
 
 		if(mysqli_query($con, $sql)){
 			return true;
@@ -28,22 +28,29 @@
 
 	function getAllUsers(){
 		$con = getConnection();
-		$sql = "select * from users";
+		$sql = "select * from products";
 		$result = mysqli_query($con, $sql);
 		return $result;
 	}
 
 	function getUserById($id){
 		$con = getConnection();
-		$sql = "select * from users where id={$id}";
+		$sql = "select * from products where id={$id}";
 		$result = mysqli_query($con, $sql);
 		$data = mysqli_fetch_assoc($result);
 		return $data;
 	}
 
+	function getUserByName($name){
+		$con = getConnection();
+		$sql = "select * from products where name={$name}";
+		$result = mysqli_query($con, $sql);
+		return $result;
+	}
+
 	function editUser($user){
 		$con = getConnection();
-		$sql = "update users set username='{$user['username']}', password='{$user['password']}', email='{$user['email']}' where id={$user['id']}";
+		$sql = "update products set name='{$user['name']}', buyingPrice='{$user['buyingPrice']}', sellingPrice='{$user['sellingPrice']}' where id={$user['id']}";
 
 		if(mysqli_query($con, $sql)){
 			return true;
@@ -54,7 +61,7 @@
 
 	function deleteUser($id){
 		$con = getConnection();
-		$sql = "delete from users where id={$id}";
+		$sql = "delete from products where id={$id}";
 		if(mysqli_query($con, $sql)){
 			return true;
 		}else{
