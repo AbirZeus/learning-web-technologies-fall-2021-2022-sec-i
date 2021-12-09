@@ -3,7 +3,8 @@
 	<title>Registration</title>
 </head>
 <body>
-	<form method="post" action="RegistrationCheck.php">
+	<div style="background-image: url('../Asset/img1.jpg');">
+	<form method="post" action="../Controller/RegistrationCheck.php">
 		<fieldset>
 			<legend>Registration</legend>
 			<table>
@@ -30,9 +31,9 @@
 				<tr>
 					<td>Gender:</td>
 					<td>
-						<input type="radio" name="gender" value="">Male
-						<input type="radio" name="gender" value="">Female
-						<input type="radio" name="gender" value="">Other
+						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female
+						<input type="radio" name="gender" value="other">Other
 					</td>
 				</tr>
 				<tr>
@@ -41,8 +42,9 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><input type="submit" name="submit" value="Submit"></td>
-					<td><input type="reset" name="reset" value="Reset"></td>
+					<td><input type="submit" name="submit" value="Register"></td>
+					<td><input type="reset" name="reset" value="Reset">
+						<br><a href="Login.php">Login here</a></td>
 				</tr>
 			</table>
 		</fieldset>

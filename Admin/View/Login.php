@@ -3,7 +3,7 @@
 	<title>Login</title>
 </head>
 <body>
-	<div style="background-image: url('../Asset/img1.jpg');">
+	<div text-align:center, style="background-image: url('../Asset/img1.jpg');">
 	<form method="post" action="../Controller/LoginCheck.php">
 		<fieldset>
 			<legend>LogIn</legend>
@@ -30,5 +30,6 @@
 			</table>
 		</fieldset>
 	</form>
+</div>
 </body>
 </html>
